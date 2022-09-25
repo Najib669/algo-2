@@ -1,0 +1,49 @@
+//Problem 2, Solution 1 with an array.
+ALGORITHM sum_overlapping_elements
+VAR
+    arr1 : ARRAY_OF INTEGER[length];
+    arr2 : ARRAY_OF INTEGER[length];
+    sum:INTEGER := 0;
+
+BEGIN
+    Read(arr1)
+    Read(arr2)
+    FOR i FROM 0 TO arr1-1 STEP step  DO
+        IF (arr1[i] in arr2) THEN
+            sum := sum +arr1[i]
+        ELSE
+            sum := sum
+        END_IF
+    END_FOR
+
+
+    Write (sum) 
+END
+
+ALGORITHM algorithm_linear_data_structures
+VAR
+A : ARRAY_OF INTEGER[4];
+B: ARRAY_OF INTEGER[5];
+C = A + B
+i : INTEGER;
+n : INTEGER of A
+m : INTEGER of B
+sum = [] ;
+
+BEGIN
+ Read(A)
+ Read(B)
+
+ FOR i FROM 0 TO C STEP   DO
+    IF ( i = 0; i<C ) THEN
+    i = i++
+    and IF (n<>m) THEN
+        i = i++
+        ELSE
+        sum := sum +C[i]
+    END_IF
+ END_FOR
+write (destintive num)
+write (sum)
+
+END
